@@ -1,0 +1,358 @@
+/* 
+AlPhaD UI - about
+
+* Version: 1.0
+* Build Date    :  15-12-2017 
+* Last Update   :  - []
+* Author: ALPhA D
+* Website: www.alphadsy.com
+* contribute on github : https://github.com/alphadsy/alpha-ui
+more ui & layout https://github.com/alphadsy   
+
+[Layout]
+
+* body
+	- about / #about
+	  + caption || + mune  || - title || - text
+	    - title      -box 
+      - text
+    
+[Color codes]
+
+[Typography]
+
+[content table]
+
+- about main css 
+- #about1 css
+.
+.
+.    
+- demo css (for demo purpose only)
+
+*/
+
+/* =======================================
+ about
+========================================*/
+
+.about {
+    position: relative;
+    12 width: 100vw;
+    background-color: #fff;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+    .about .row {
+        min-height: 500px; /* height variable */
+    }
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+    .row > .col,
+    .row > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+.about .title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.about .text {
+    color: #868e96;
+}
+
+.about .img {
+    overflow: hidden;
+    width: 100%;
+}
+
+.img img {
+    width: 100%;
+}
+/* === Only extra Small devices (mobile phones, up to 576px) ===*/
+@media (max-width: 575px) {
+    .d-xs-none {
+        display: none;
+    }
+
+    .about .caption {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+/* === Small devices (landscape phones, 576px and up) ===*/
+@media (min-width: 576px) {
+    .about .caption {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(0, -50%);
+        padding-left: 1rem;
+        padding-right: 2rem;
+    }
+
+    .img img {
+        min-height: 400px;
+    }
+}
+/* ==== Medium devices (tablets, 768px and up) ===*/
+@media (min-width: 768px) {
+    .about .caption {
+        top: 36%;
+    }
+}
+
+/* =======================================
+ about#1
+========================================*/
+/* === Only Extra Small devices (mobile phones, up to 576px ) ===*/
+
+@media (max-width: 576px) {
+    #about1 .img img {
+        display: block;
+        width: 150px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        margin-top: 50px;
+    }
+}
+
+
+
+/* =======================================
+ about#3
+========================================*/
+#about3 {
+}
+
+    #about3 .box {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-around !important;
+        padding-left: 1rem;
+        padding-bottom: 3rem;
+    }
+
+        #about3 .box #language-img img {
+            width: 100px;
+            margin-right: 20px;
+        }
+
+        #about3 .box .imgProject  {
+            width: 600px;
+        }
+/* === Only Small devices (landscape phones, 576px to 767px) ===*/
+@media (min-width: 576px) and (max-width: 100%) {
+    #about3 .caption {
+        position: relative;
+        text-align: center;
+        padding: 3rem;
+    }
+}
+
+/* =======================================
+ about#4
+========================================*/
+#about4 {
+}
+
+    #about4 .img {
+        background: url("https://cdn.stocksnap.io/img-thumbs/960w/15XPEFFPMP.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
+    #about4 .mune {
+        padding: 0px;
+        color: #fff;
+        background-color: rgba(220, 53, 69, 0.6);
+    }
+
+    #about4 .box {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-around !important;
+        padding: 1.5rem;
+    }
+/* === Only Small devices (landscape phones, 576px to 767px) ===*/
+@media (min-width: 576px) and (max-width: 767px) {
+    #about4 .caption {
+        position: relative;
+        text-align: center;
+        padding: 3rem;
+    }
+}
+
+/* =======================================
+demo css
+========================================*/
+
+/*=== for demo only ===*/
+.demo-title {
+    text-align: center;
+    color: #808080;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+}
+
+.about {
+    margin-bottom: 1rem;
+}
+
+.demo-more {
+    text-align: center;
+    color: #808080;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+    .demo-more i {
+        color: #696969;
+    }
+
+a {
+    text-decoration: underline;
+    text-decoration: underline;
+    color: #696969;
+    font-weight: 600;
+}
+
+    a:hover {
+        color: #696969;
+    }
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+.header {
+    position: relative;
+    width: 100vw;
+    height: 400px;
+}
+
+    .header .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%,-50%);
+        z-index: 5;
+        padding: 1rem;
+    }
+
+    .header .left {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%,-50%);
+        z-index: 5;
+        padding: 1rem;
+    }
+
+    .header .right {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%,-50%);
+        z-index: 5;
+        padding: 1rem;
+    }
+
+    .header .scroll {
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        font-size: 1.5rem;
+    }
+/*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
+    .header .center {
+        width: 50%;
+    }
+
+    .header .left {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 40%;
+        height: 60%;
+        transform: translate(0, 0);
+        padding: 1rem;
+    }
+
+    .header .right {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        width: 40%;
+        height: 60%;
+        transform: translate(0, 0);
+        padding: 1rem;
+    }
+}
+
+
+
+/* =======================================
+ header#2
+========================================*/
+#header2 {
+    background: #355c7d;
+    background: linear-gradient( rgba(53, 92, 125, 0.8), /* #355c7d */
+    rgba(108, 91, 123, 0.8), /* #6c5b7b */
+    rgba(192, 108, 123, 0.8) /* #c06c7b */
+    ), url('https://cdn.stocksnap.io/img-thumbs/960w/LPPN6E2YK4.jpg') no-repeat left top;
+    background-size: cover;
+    z-index: 0; /* bottom layout */
+}
+
+    #header2 .caption {
+        z-index: 5;
+        text-align: center;
+        color: #fff;
+    }
+
+        #header2 .caption .title {
+            margin-bottom: 1.5rem;
+            font-size: 70px;
+        }
+
+        #header2 .caption .text {
+            margin-bottom: 1.5rem;
+        }
+
+        #header2 .caption .action {
+            display: flex;
+            margin-bottom: 1rem;
+            margin-left: 15%;
+            width: 70%;
+        }
+/*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
+    #header2 .caption {
+        text-align: left;
+    }
+
+        #header2 .caption .action {
+            display: flex;
+            margin-bottom: 1rem;
+            margin-left: 0%;
+            width: 80%;
+        }
+}
